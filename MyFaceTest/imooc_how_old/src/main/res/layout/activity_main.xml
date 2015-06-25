@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="get_image"
+        android:id="@+id/id_getimage"
+        android:layout_marginRight="10dp"
+        />
+    <Button
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dectect"
+        android:id="@+id/id_dectet"
+        android:layout_alignleft="@+id/id_getimage"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/id_getimage" />
+
+    <TextView android:text="click" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/id_dectet"
+        android:layout_toLeftOf="@+id/id_dectet"
+        android:gravity="center"
+        android:id="@+id/id_tip"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_pohoto"
+        android:layout_above="@+id/id_dectet"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/t4"
+        />
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:clickable="true"
+    android:id="@+id/id_waitting">
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_gravity="center"/>
+    </FrameLayout>
+</RelativeLayout>
