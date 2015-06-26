@@ -5,5 +5,5 @@ package face.zhen.com.imooc_how_old;
  */
 public class Constant {
     public static final String KEY="912f6ec59c9b60894720fa867b01bc9f";
-    public static final String SECERT="AmZG4TLj07MTUXCAKRhsite9SfFx7xAf ";
+    public static final String SECERT="AmZG4TLj07MTUXCAKRhsite9SfFx7xAf";
 }

@@ -19,7 +19,6 @@
         android:layout_height="wrap_content"
         android:text="dectect"
         android:id="@+id/id_dectet"
-        android:layout_alignleft="@+id/id_getimage"
         android:layout_alignParentBottom="true"
         android:layout_toStartOf="@+id/id_getimage" />
 
@@ -41,14 +40,26 @@
         android:layout_alignParentTop="true"
         android:src="@drawable/t4"
         />
-<FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:visibility="gone"
-    android:clickable="true"
-    android:id="@+id/id_waitting">
-    <ProgressBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_gravity="center"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:clickable="true"
+        android:id="@+id/id_waitting">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/id_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/nam"
+            android:text="123"
+            android:background="@drawable/hint"
+            android:visibility="invisible"
+            android:textColor="#ffff00ff"
+            android:textSize="22sp"
+            android:gravity="center"
+            />
     </FrameLayout>
 </RelativeLayout>
